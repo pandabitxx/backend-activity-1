@@ -18,7 +18,7 @@ class productManager {
         }
     }
     getProducts(){
-        return this.products;
+        return console.log(this.products);
     }
     getProductById(lastId){
         const findId = this.products.find(x => x.id === lastId);
@@ -34,4 +34,5 @@ us.addProduct('Agua', 'Mineral', '$4', 'png', '2011', 'Available');
 us.addProduct('Leche', 'Entera', '$8', 'png', '2015', 'Available');
 us.addProduct('Leche', 'Entera', '$8', 'png', '2014', 'Available');
 us.addProduct('Agua', 'Mineral', '$4', 'png', '2013', 'Available');
-us.getProductById(3)
+//us.getProductById(3)
+us.getProducts();
